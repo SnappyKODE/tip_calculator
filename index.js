@@ -37,7 +37,7 @@ function check()
     people=$(".people_count input").val();
     tip = (bill * (tip_percent/100))/people;
     total = (bill*(1 + (tip_percent/100)))/people;
-    if(people != 0 && tip_percent>0){
+    if(people != 0){
         $("#tip_amount").text("$"+tip.toFixed(2));
         $("#total_tip").text("$"+total.toFixed(2));
         $("#error").css("display","none");
