@@ -41,6 +41,7 @@ function check()
         $("#tip_amount").text("$"+tip.toFixed(2));
         $("#total_tip").text("$"+total.toFixed(2));
         $("#error").css("display","none");
+        $(".people_count input").removeClass("error_border");
     }
     else{
         $("#error").css("display","inline");
